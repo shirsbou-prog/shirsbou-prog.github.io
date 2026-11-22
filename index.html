@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>הזמנות | Shir's Boutique</title>
+<meta name="description" content="Shir's Boutique, קונדיטוריה בוטיק במושב מזור. הזמנות לחנוכה, קינוחים ועוגות לשישי.">
+<meta property="og:title" content="הזמנות | Shir's Boutique">
+<meta property="og:description" content="הזמנות לחנוכה, קינוחים ועוגות לשישי. כשר למהדרין, חלבי.">
+<meta property="og:image" content="https://shirsbou-prog.github.io/files/hanukkah.jpg">
+<style>
+  @font-face{font-family:'Heebo';font-weight:800;src:url('files/heebo.ttf') format('truetype')}
+  @font-face{font-family:'Heebo';font-weight:400;src:url('files/heebo-regular.ttf') format('truetype')}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Heebo',Arial,sans-serif;color:#000;background:#f6ecef;min-height:100vh}
+  body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-gradient(rgba(251,243,238,.55),rgba(251,243,238,.55)),url('files/page-bg.jpg') center/cover no-repeat}
+  .wrap{max-width:480px;margin:0 auto;padding:28px 16px 32px;text-align:center}
+  .brand{display:inline-flex;align-items:center;gap:16px;background:rgba(255,255,255,.7);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:20px;padding:12px 20px;box-shadow:0 8px 22px rgba(90,52,24,.15)}
+  .brand img.logo{width:140px;display:block}
+  .brand img.k{width:84px;display:block}
+  h1{font-weight:800;font-size:40px;line-height:1.15;color:#fff;-webkit-text-stroke:4px #5a3418;paint-order:stroke fill;text-shadow:0 6px 14px rgba(90,52,24,.25);margin:22px 0 6px}
+  .sub{font-weight:800;font-size:17px;color:#5a3418;margin-bottom:22px}
+  .card{display:block;text-decoration:none;color:#000;background:#fff;border-radius:20px;overflow:hidden;margin-bottom:18px;border:2px solid #D4AF37;box-shadow:0 12px 28px rgba(90,52,24,.18);transition:transform .15s}
+  .card:active{transform:scale(.98)}
+  .card img{width:100%;height:190px;object-fit:cover;display:block}
+  .card .in{padding:14px 16px 18px}
+  .card .t{font-weight:800;font-size:26px}
+  .card .d{font-size:15px;color:#7a4a57;margin-top:4px;line-height:1.45}
+  .card .go{display:inline-block;margin-top:12px;background:#000;color:#fff;font-weight:800;font-size:17px;padding:10px 26px;border-radius:30px}
+  .card.hl .go{background:#D4AF37;color:#000}
+  .info{font-size:13px;color:#5a3418;margin-top:6px;line-height:1.6}
+  .info a{color:#5a3418;font-weight:800}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand"><img class="logo" src="files/logo.png" alt="Shir's Boutique קונדיטוריה בוטיק"><img class="k" src="files/kosher.png" alt="כשר למהדרין, חלבי"></div>
+  <h1>מה מזמינים היום?</h1>
+  <div class="sub">קונדיטוריה בוטיק · מושב מזור · כשר למהדרין</div>
+
+  <a class="card hl" id="hanukkah" href="https://shirsbou-prog.github.io/sufganiyot-pricelist/">
+    <img src="files/hanukkah.jpg" alt="סופגניות לחנוכה" style="object-position:center 35%">
+    <div class="in">
+      <div class="t">הזמנות לחנוכה</div>
+      <div class="d">סופגניות בריוש חמאה בעבודת יד, ספינג' ופריקסה</div>
+      <span class="go">להזמנה לחנוכה</span>
+    </div>
+  </a>
+
+  <a class="card" href="https://shirsbou-prog.github.io/sinabon-order/">
+    <img src="files/desserts.jpg" alt="קינוחים ועוגות">
+    <div class="in">
+      <div class="t">קינוחים ועוגות</div>
+      <div class="d">סינבון, עוגות שמרים, קראמבל קוקיז, בחושות וקריסטליות לשישי</div>
+      <span class="go">להזמנה לשישי</span>
+    </div>
+  </a>
+
+  <div class="info">שאלות? <a href="https://wa.me/972534247937">וואטסאפ 053-4247937</a><br>סמטת הבוקרים 5, מושב מזור</div>
+</div>
+<script>
+  // Hanukkah card disappears automatically after the last Hanukkah order day
+  if (new Date() > new Date('2026-12-10T00:00:00+02:00')) document.getElementById('hanukkah').style.display = 'none';
+</script>
+</body>
+</html>
